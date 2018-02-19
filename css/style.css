@@ -104,11 +104,12 @@ body {
     background-color: #fff;
     transition: all 0.3s;
     filter: blur(0);
+    transform: scale(1) translate3d(0,0,0);
     cursor: -webkit-zoom-in;
 }
 
 .feed_content .card .image_wrap:hover {
-    transform: scale(1.1);
+    transform: scale(1.1) translate3d(0,0,0);
 }
 
 .feed_content .card .txt_wrap {
