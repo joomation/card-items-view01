@@ -35,7 +35,7 @@
     </div>
     <div class="feed_content">
         <div class="card">
-            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images//cap11.jpg)"></div>
+            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images/cap11.jpg)"></div>
             <div class="txt_wrap">
                 <a class="more" href="javascript:void(0);" onclick="moreText(this)">
                     <span></span>
@@ -45,7 +45,7 @@
             </div>
         </div>
         <div class="card">
-            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images//cap10.jpg)"></div>
+            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images/cap10.jpg)"></div>
             <div class="txt_wrap">
                 <a class="more" href="javascript:void(0);" onclick="moreText(this)">
                     <span></span>
@@ -55,7 +55,7 @@
             </div>
         </div>
         <div class="card">
-            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images//cap9.jpg)"></div>
+            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images/cap9.jpg)"></div>
             <div class="txt_wrap">
                 <a class="more" href="javascript:void(0);" onclick="moreText(this)">
                     <span></span>
@@ -65,7 +65,7 @@
             </div>
         </div>
         <div class="card">
-            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images//cap8.jpg)"></div>
+            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images/cap8.jpg)"></div>
             <div class="txt_wrap">
                 <a class="more" href="javascript:void(0);" onclick="moreText(this)">
                     <span></span>
@@ -75,7 +75,7 @@
             </div>
         </div>
         <div class="card">
-            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images//cap7.jpg)"></div>
+            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images/cap7.jpg)"></div>
             <div class="txt_wrap">
                 <a class="more" href="javascript:void(0);" onclick="moreText(this)">
                     <span></span>
@@ -85,7 +85,7 @@
             </div>
         </div>
         <div class="card">
-            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images//cap6.jpg)"></div>
+            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images/cap6.jpg)"></div>
             <div class="txt_wrap">
                 <a class="more" href="javascript:void(0);" onclick="moreText(this)">
                     <span></span>
@@ -123,7 +123,7 @@
         function layer_detail(target) {
             var detailTitle = target.nextElementSibling.children[1].innerText;
             var detailContent = target.nextElementSibling.children[2].innerText;
-            var detailImg = target.style.backgroundImage.split('("')[1].split('")')[0];
+            var detailImg = target.style.backgroundImage.slice(4, -1).replace(/"/g, "");
             var imageLoading = document.querySelector('.detail_container .loading');
             imageLoading.style.display = "block";
 
