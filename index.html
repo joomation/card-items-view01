@@ -121,6 +121,7 @@
         }
 
         function layer_detail(target) {
+            document.body.style.touchAction='none';
             var detailTitle = target.nextElementSibling.children[1].innerText;
             var detailContent = target.nextElementSibling.children[2].innerText;
             var detailImg = target.style.backgroundImage.slice(4, -1).replace(/"/g, "");
@@ -142,6 +143,7 @@
         }
 
         function layerClose() {
+            document.body.style.touchAction='auto';
             var layer = document.getElementById('layer');
             layer.classList.remove('on');
         }
