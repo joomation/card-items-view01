@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>card-items-view01</title>
+</head>
+
+<body>
+    <div class="title">
+        <span>by</span>
+        <a class="logo" href="https://joomation.com/home">
+            <svg x="0px" y="0px" viewBox="0 0 80 25">
+                <ellipse class="logo-svg" cx="13.6" cy="12.8" rx="3.6" ry="4.4" />
+                <ellipse class="logo-svg" cx="23.7" cy="12.8" rx="3.6" ry="4.4" />
+                <ellipse class="logo-svg" cx="64" cy="12.8" rx="3.6" ry="4.4" />
+                <polyline class="logo-svg" points="37.6,17.2 37.6,8.4 34.1,12 30.5,8.4 30.5,17.2 " />
+                <g>
+                    <line class="logo-svg" x1="44.2" y1="14.3" x2="42" y2="14.3" />
+                    <polyline class="logo-svg" points="47.6,17.2 44.2,8.4 40.8,17.2 	" />
+                    <line class="logo-svg" x1="44.2" y1="14.3" x2="46.5" y2="14.3" />
+                </g>
+                <g>
+                    <line class="logo-svg" x1="48.4" y1="8.4" x2="53.8" y2="8.4" />
+                    <line class="logo-svg" x1="51.1" y1="8.4" x2="51.1" y2="17.2" />
+                </g>
+                <line class="logo-svg" x1="56.9" y1="8.4" x2="56.9" y2="17.2" />
+                <polyline class="logo-svg" points="70.6,17.2 70.6,8.4 76.6,17.2 76.6,8.4 " />
+                <path class="logo-svg" d="M6.8,8.3c0,0,0,3.9,0,5.8s-1.5,4.3-3.8,2.3" />
+            </svg>
+        </a>
+    </div>
+    <div class="feed_content">
+        <div class="card">
+            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images//cap11.jpg)"></div>
+            <div class="txt_wrap">
+                <a class="more" href="javascript:void(0);" onclick="moreText(this)">
+                    <span></span>
+                </a>
+                <h3>2017년~현재 사용 모자</h3>
+                <p>2017년 LG트윈스 BI 변경을 통해 교체된 모자</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images//cap10.jpg)"></div>
+            <div class="txt_wrap">
+                <a class="more" href="javascript:void(0);" onclick="moreText(this)">
+                    <span></span>
+                </a>
+                <h3>트윈스 여름사냥 모자(2017년)</h3>
+                <p>2017년 트윈스 여름사냥 이벤트 경기 시 선수들이 착용한 모자</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images//cap9.jpg)"></div>
+            <div class="txt_wrap">
+                <a class="more" href="javascript:void(0);" onclick="moreText(this)">
+                    <span></span>
+                </a>
+                <h3>밀리터리 모자(2016년)</h3>
+                <p>2016년 6월 24일~26일 잠실 넥센히어로즈 전에서 착용한 밀리터리 모자</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images//cap8.jpg)"></div>
+            <div class="txt_wrap">
+                <a class="more" href="javascript:void(0);" onclick="moreText(this)">
+                    <span></span>
+                </a>
+                <h3>썸머크리스마스 모자(2011년~2014년)</h3>
+                <p>2011년부터 2014년까지 썸머크리스마스 행사 시 사용한 모자. 팀 로고 상단에 산타클로스 모자를 추가.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images//cap7.jpg)"></div>
+            <div class="txt_wrap">
+                <a class="more" href="javascript:void(0);" onclick="moreText(this)">
+                    <span></span>
+                </a>
+                <h3>올드 유니폼 데이 모자(2010년)</h3>
+                <p>2010년 프로스포츠 최초 홈경기 2,000만 관중 돌파를 기념하여 진행한 올드 유니폼 데이에 착용한 모자.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="image_wrap" onclick="layer_detail(this);" style="background-image: url(images//cap6.jpg)"></div>
+            <div class="txt_wrap">
+                <a class="more" href="javascript:void(0);" onclick="moreText(this)">
+                    <span></span>
+                </a>
+                <h3>2008년~2016년 사용 모자</h3>
+                <p>2008년부터 2016년까지 사용한 모자.</p>
+            </div>
+        </div>
+    </div>
+    <div class="over_wrap" id="layer" onclick="outClick()">
+        <a href="javascript:void(0);" class="close_btn" onclick="layerClose()"></a>
+        <div class="board_detail_wrap" onclick="exceptArea(event)">
+            <div class="detail_container">
+                <div class="loading">
+                    <div class="bar-loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <img src="" alt="큰이미지">
+                <h3 class="title"></h3>
+                <p class="content"></p>
+            </div>
+
+        </div>
+
+    </div>
+    <script>
+        function moreText(target) {
+            var element = target.parentNode.parentNode;
+            element.classList.toggle('on')
+        }
+
+        function layer_detail(target) {
+            var detailTitle = target.nextElementSibling.children[1].innerText;
+            var detailContent = target.nextElementSibling.children[2].innerText;
+            var detailImg = target.style.backgroundImage.split('("')[1].split('")')[0];
+            var imageLoading = document.querySelector('.detail_container .loading');
+            imageLoading.style.display = "block";
+
+            var layer = document.getElementById('layer');
+            layer.classList.add('on');
+            document.querySelector('.detail_container img').attributes[0].nodeValue = '';
+            document.querySelector('.detail_container .title').innerHTML = detailTitle;
+            document.querySelector('.detail_container .content').innerHTML = detailContent;
+
+            document.querySelector('.detail_container img').onload = function (result) {
+                imageLoading.style.display = "none";
+            }
+            document.querySelector('.detail_container img').attributes[0].nodeValue = detailImg.replace("images",
+                "images/large");
+
+        }
+
+        function layerClose() {
+            var layer = document.getElementById('layer');
+            layer.classList.remove('on');
+        }
+
+        function outClick() {
+            var layer = document.getElementById('layer');
+            layer.classList.remove('on');
+        }
+
+        function exceptArea(e) {
+            e.stopPropagation();
+        }
+    </script>
+</body>
+
+
+</html>
